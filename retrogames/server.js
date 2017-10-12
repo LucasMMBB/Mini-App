@@ -56,7 +56,7 @@ app.route('/game/:id')
 
 // ...For all the other requests just sends back the Homepage
 app.route("*").get((req, res) => {
-  res.sendFile('../client/dist/index.html', { root: __dirname });
+  res.sendFile('./client/dist/index.html', { root: __dirname });
 });
 
 app.listen(port);
